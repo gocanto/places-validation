@@ -1,0 +1,24 @@
+{
+    "name": "gocanto/address-validation",
+    "description": "validate users addresses through services like google place",
+    "keywords": ["validate", "users", "addresses"],
+    "homepage": "https://github.com/gocanto/address-validation",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gustavo Ocanto",
+            "email": "gustavoocanto@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gocanto\\AddressValidation\\": "src"
+        }
+    }
+}

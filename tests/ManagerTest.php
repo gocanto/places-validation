@@ -1,8 +1,10 @@
 <?php
 
-namespace League\Skeleton;
+namespace Gocanto\AddressValidation\Test;
 
-class ExampleTest extends \PHPUnit_Framework_TestCase
+use Gocanto\AddressValidation\Lib\Checker;
+
+class ManagerTest extends \TestCase
 {
     /**
      * Test that true does in fact equal true
@@ -11,4 +13,6 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertTrue(true);
     }
+
+
 }

@@ -7,18 +7,28 @@
     "authors": [
         {
             "name": "Gustavo Ocanto",
-            "email": "gustavoocanto@gmail.com"
+            "email": "gustavoocanto@gmail.com",
+            "homepage": "http://g-ocanto.com",
+            "role": "Web Developer"
         }
     ],
     "require": {
-        "php": ">=5.5.9"
+        "php" : "~5.6|~7.0",
+        "illuminate/support": "5.2.*"
     },
     "require-dev": {
-        "phpunit/phpunit" : "4.*"
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "orchestra/testbench": "~3.0"
     },
     "autoload": {
         "psr-4": {
             "Gocanto\\AddressValidation\\": "src"
-        }
+        },
+        "classmap": [
+            "tests"
+        ]
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     }
 }

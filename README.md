@@ -1,7 +1,7 @@
 # Places Validation
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gocanto/places-validation.svg?style=flat-square)](https://img.shields.io/packagist/v/gocanto/places-validation.svg)
-[![Software License](https://github.com/gocanto/places-validation/blob/dev/LICENSE.md)](LICENSE.md)
+<a href="https://github.com/gocanto/google-autocomplete/blob/master/LICENSE.md"><img src="https://img.shields.io/npm/l/easiest-js-validator.svg" alt="License"></a>
 [![Total Downloads](https://img.shields.io/packagist/dt/gocanto/places-validation.svg?style=flat-square)](https://img.shields.io/packagist/dt/gocanto/places-validation.svg?style=flat-square)
 
 

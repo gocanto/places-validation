@@ -11,7 +11,7 @@ class ManagerTest extends TestCase
     {
         $checker = $this->app[\Gocanto\AddressValidation\Lib\Checker::class];
 
-        if ( $place = $checker->validate('Guacara, Carabobo, Venezuela')) {
+        if ($place = $checker->validate('Guacara, Carabobo, Venezuela')) {
             $this->assertArrayHasKey('formatted_address', $place->retrieve());
             $this->assertArrayHasKey('lat', $place->location());
             $this->assertArrayHasKey('lng', $place->location());

@@ -1,5 +1,5 @@
 {
-    "name": "gocanto/address-validation",
+    "name": "gocanto/places-validation",
     "description": "validate users addresses through services like google place",
     "keywords": ["validate", "users", "addresses"],
     "homepage": "https://github.com/gocanto/address-validation",

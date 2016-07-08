@@ -13,7 +13,7 @@
 >
     <testsuites>
         <testsuite name=":vendor Test Suite">
-            <directory>./tests/</directory>
+            <directory>tests/</directory>
         </testsuite>
     </testsuites>
     <filter>

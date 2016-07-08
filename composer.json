@@ -25,6 +25,11 @@
             "Gocanto\\AddressValidation\\": "src"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Gocanto\\AddressValidation\\Tests\\": "tests"
+        }
+    },
     "scripts": {
         "test": "./vendor/bin/phpunit"
     }

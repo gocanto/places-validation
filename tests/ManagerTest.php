@@ -1,14 +1,12 @@
 <?php
 
-namespace Gocanto\AddressValidation\Test;
+namespace Gocanto\AddressValidation\Tests;
 
 use Gocanto\AddressValidation\Lib\Checker;
+use Gocanto\AddressValidation\Tests\TestCase;
 
-class ManagerTest extends \TestCase
+class ManagerTest extends TestCase
 {
-    /**
-     * Test that true does in fact equal true
-     */
     public function test_geocode_driver_address_is_valid()
     {
         $checker = $this->app[\Gocanto\AddressValidation\Lib\Checker::class];

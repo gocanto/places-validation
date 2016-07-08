@@ -15,7 +15,7 @@ class Checker
 	 * @var array
 	 */
 	private $drivers = [
-		'GeoogleGeocode' => \App\Services\Places\GeoogleGeocode::class
+		'GeoogleGeocode' => \Gocanto\AddressValidation\Lib\drivers\GeoogleGeocode::class
 	];
 
 	/**

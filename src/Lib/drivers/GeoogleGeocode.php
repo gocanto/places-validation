@@ -1,8 +1,8 @@
 <?php
 
-namespace Gocanto\AddressValidation\Lib;
+namespace Gocanto\AddressValidation\Lib\drivers;
 
-use App\Services\Places\Contract;
+use Gocanto\AddressValidation\Lib\Contract;
 
 class GeoogleGeocode implements Contract
 {

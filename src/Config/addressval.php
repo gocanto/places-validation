@@ -1,9 +1,15 @@
 <?php
 return [
 
-    /**
-     * Driver configuration info.
-     */
+    /*
+    |--------------------------------------------------------------------------
+    | Driver configuration info
+    |--------------------------------------------------------------------------
+    |
+    | this file contains the configuration for the gocanto/places-validation package
+    | 'driver' is the driver info container.
+    */
+
     'driver' => [
 
         //api key if required

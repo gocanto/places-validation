@@ -28,7 +28,10 @@
     "autoload-dev": {
         "psr-4": {
             "Gocanto\\AddressValidation\\Tests\\": "tests"
-        }
+        },
+        "classmap": [
+            "tests/TestCase.php"
+        ]
     },
     "scripts": {
         "test": "./vendor/bin/phpunit"

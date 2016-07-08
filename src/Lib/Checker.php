@@ -45,12 +45,21 @@ class Checker
 	 */
 	private function resolveConfig()
 	{
-		$config = config('app.places_checker');
+		$config = config('addressval.driver');
 
 		if ($config) {
 			return $config;
 		}
 
+		return $this->defaultDriver();
+	}
+
+	/**
+	 * Returns the default driver.
+	 * @return array
+	 */
+	private function defaultDriver()
+	{
 		return [
 	        'key' => '',
 	        'name' => 'GeoogleGeocode',

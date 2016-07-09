@@ -7,6 +7,10 @@
 
 Places validation is a ***laravel*** library that will help you out to handle your user addresses. Its aim is making sure the addresses submitted by users are valid through 3rd party services, as google.
 
+# Illustration
+
+![example](https://github.com/gocanto/places-validation/blob/dev/src/Images/google-output.png)
+
 
 # Installation
 

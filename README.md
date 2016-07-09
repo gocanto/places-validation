@@ -8,8 +8,7 @@
 Places validation is a ***laravel*** library that will help you out to handle your user addresses. Its aim is making sure the addresses submitted by users are valid through 3rd party services, as google.
 
 
-
-## Installation
+# Installation
 
 Begin by installing the package through Composer. Run the following command in your terminal:
 
@@ -22,6 +21,53 @@ Once composer is done, add the package service provider in the providers array i
 ```php
 Gocanto\AddressValidation\ValidatorServiceProvider::class
 ```
+
+
+# Settings
+
+You will be able to set the validator driver into ```config/addressval.php``` file. At the moment, the package just has the ability to work with google, but others services are planned ahead.
+
+
+The array driver looks like this: 
+```php
+'driver' => [
+
+  //api key if required
+  'key' => '',
+
+  //driver object
+  'name' => 'GeoogleGeocode',
+
+  //api url
+  'api' => 'http://maps.google.com/maps/api/geocode/json'
+],
+```
+
+if you do not set the driver within this file, the default one will be used. 
+
+
+# Implementation
+
+To implement the validation within your project, you have to include the Checker object as so:
+```php
+use Gocanto\AddressValidation\Lib\Checker;
+```
+
+
+then, you can let laravel to handle the dependency injection for you, as so: 
+```php
+public function index(Checker $places)
+{
+
+  if ( ! $v = $places->validate('Guacara, Carabobo, Venezuela')) {
+    //the place is not valid.
+  }
+
+  //retrieve the place information.
+  dd($v->retrieve(), $v->location());
+}
+```
+
 
 
 # Contributing

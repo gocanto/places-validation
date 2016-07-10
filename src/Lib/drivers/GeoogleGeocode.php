@@ -93,7 +93,34 @@ class GeoogleGeocode implements Contract
      */
     public function retrieve()
     {
-        return collect($this->place['results'])->collapse();
+        $place = collect($this->place['results'])->collapse();
+
+        return $this->getAddressComponents($place)->merge(
+            [
+                'geometry' => $place->get('geometry'),
+                'place_id' => $place->get('place_id')
+            ]
+        );
+    }
+
+    /**
+     * Builds the address components collection.
+     * @param  Collection $place
+     * @return Collection
+     */
+    private function getAddressComponents($place)
+    {
+        $components = $place->get('address_components');
+
+        return collect($components)->map(function($item)
+        {
+            return [
+                $item["types"][0] => [
+                    'long_name' => $item['long_name'],
+                    'short_name' => $item['short_name']
+                ]
+            ];
+        })->collapse();
     }
 
     /**

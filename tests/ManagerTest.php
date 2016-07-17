@@ -26,4 +26,35 @@ class ManagerTest extends TestCase
             $this->assertFalse($place);
         }
     }
+
+    public function test_validate_valid_place()
+    {
+        $rules = [
+            'address' => 'valid_place'
+        ];
+
+        $data = [
+            'address' => 'Guacara, Carabobo, Venezuela'
+        ];
+
+        $v = $this->app['validator']->make($data, $rules);
+        $this->assertTrue($v->passes());
+    }
+
+    public function test_validate_valid_place_passing_a_bad_address()
+    {
+        $rules = [
+            'address' => 'valid_place'
+        ];
+
+        $data = [
+            'address' => 'I am from Venezuela'
+        ];
+
+        $v = $this->app['validator']->make($data, $rules);
+
+        $this->assertFalse($v->passes());
+    }
+
+
 }

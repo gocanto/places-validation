@@ -45,7 +45,26 @@ The array driver looks like this:
 if you do not set the driver within this file, the default one will be used. 
 
 
-# Implementation
+# Validate user address using the Laravel validator object
+
+Now you will be able to use this package to validate the user address information within your validations rules. This is how it would look like:
+
+```php
+$rules = [
+  'address' => 'valid_place'
+];
+
+$data = [
+  'address' => 'Guacara, Carabobo, Venezuela'
+];
+
+$v = \Validator::make($data, $rules);
+```
+
+You will be able to see the implementation on <a href="https://github.com/gocanto/places-validation/blob/master/tests/ManagerTest.php#L30-L57" target="_blank">ManagerTest</a>
+
+
+# Use out of the Laravel object
 
 To implement the validation within your project, you have to include the Checker object as so:
 ```php
@@ -68,10 +87,14 @@ public function index(Checker $places)
 ```
 
 
-# Illustration
+***Output Illustration***
 
 ![example](https://github.com/gocanto/places-validation/blob/dev/src/Examples/google-output.png)
 
+
+# Inspiration
+
+The inspiration came from a needed of using the validation within a form request object. I used [Prosper Otemuyiwa](https://github.com/unicodeveloper/laravel-password) package to have a scope of what I had to do.
 
 
 # Contributing

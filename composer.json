@@ -1,8 +1,8 @@
 {
     "name": "gocanto/places-validation",
     "description": "validate users addresses through services like google place",
-    "keywords": ["validate", "users", "addresses"],
-    "homepage": "https://github.com/gocanto/address-validation",
+    "keywords": ["validate", "users", "addresses", "places", "validation"],
+    "homepage": "https://github.com/gocanto/places-validation",
     "license": "MIT",
     "authors": [
         {

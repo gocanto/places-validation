@@ -22,6 +22,14 @@ Gocanto\AddressValidation\ValidatorServiceProvider::class
 ```
 
 
+# Client Side
+
+```Vuejs``` component which implements the google autocomplete library:
+
+* Repository: <a href="https://github.com/gocanto/google-autocomplete" _target="blank">https://github.com/gocanto/google-autocomplete</a>
+* Demo: <a href="https://gocanto.github.io/google-autocomplete/" _target="blank">https://gocanto.github.io/google-autocomplete/</a>
+
+
 # Settings
 
 You will be able to set the validator driver into ```config/addressval.php``` file. At the moment, the package just has the ability to work with google, but others services are planned ahead.

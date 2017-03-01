@@ -48,7 +48,7 @@ class ManagerTest extends TestCase
         ];
 
         $data = [
-            'address' => 'I am from Venezuela'
+            'address' => 'thi is not valid'
         ];
 
         $v = $this->app['validator']->make($data, $rules);

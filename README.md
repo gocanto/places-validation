@@ -1,8 +1,8 @@
 # Places Validation
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/gocanto/places-validation.svg?style=flat-square)](https://img.shields.io/packagist/v/gocanto/places-validation.svg)
-<a href="https://github.com/gocanto/google-autocomplete/blob/master/LICENSE.md"><img src="https://img.shields.io/npm/l/easiest-js-validator.svg" alt="License"></a>
-[![Total Downloads](https://img.shields.io/packagist/dt/gocanto/places-validation.svg?style=flat-square)](https://img.shields.io/packagist/dt/gocanto/places-validation.svg?style=flat-square)
+<a href="https://packagist.org/packages/gocanto/places-validation"><img src="https://img.shields.io/packagist/dt/gocanto/places-validation.svg" alt="Total Downloads"></a>
+<a href="https://travis-ci.org/gocanto/places-validation"><img src="https://travis-ci.org/gocanto/places-validation.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/gocanto/places-validation"><img src="https://img.shields.io/packagist/v/gocanto/places-validation.svg" alt="Latest Stable Version"></a>
 
 
 Places validation is a ***laravel*** library that will help you out to handle your user addresses. Its aim is making sure the addresses submitted by users are valid through 3rd party services, as google.
@@ -35,7 +35,7 @@ Gocanto\AddressValidation\ValidatorServiceProvider::class
 You will be able to set the validator driver into ```config/addressval.php``` file. At the moment, the package just has the ability to work with google, but others services are planned ahead.
 
 
-The array driver looks like this: 
+The array driver looks like this:
 ```php
 'driver' => [
 
@@ -50,7 +50,7 @@ The array driver looks like this:
 ],
 ```
 
-if you do not set the driver within this file, the default one will be used. 
+if you do not set the driver within this file, the default one will be used.
 
 
 # Validate user address using the Laravel validator object
@@ -80,7 +80,7 @@ use Gocanto\AddressValidation\Lib\Checker;
 ```
 
 
-then, you can let laravel to handle the dependency injection for you, as so: 
+then, you can let laravel to handle the dependency injection for you, as so:
 ```php
 public function index(Checker $places)
 {
@@ -116,7 +116,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 
 # How can I thank you?
-Why not star the github repo? I'd love the attention! Why not share the link for this repository on Twitter? Spread the word!
+Why not star the github repo? Why not share the link for this repository on Twitter? Spread the word!
 
 
 Don't forget to [follow me on twitter](https://twitter.com/gocanto)!
